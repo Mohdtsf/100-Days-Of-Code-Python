@@ -1,64 +1,41 @@
-## BMI Calculator
-
-# UPDATE
-We've moved away from repl.it for coding exercises.
-Check out the new exercises on Coding Rooms with automated submissions.
-
-Login to your Udemy course and head over to the link below to get the sign up link:
-
-[Click here](https://www.udemy.com/course/100-days-of-code/learn/lecture/17825914#questions)
+## Tip Calculator
 
 # Instructions
 
-Write a program that calculates the Body Mass Index (BMI) from a user's weight and height.
+If the bill was $150.00, split between 5 people, with 12% tip. 
 
-The BMI is a measure of some's weight taking into account their height. e.g. If a tall person and a short person both weigh the same amount, the short person is usually more overweight.
+Each person should pay (150.00 / 5) * 1.12 = 33.6
 
-The BMI is calculated by dividing a person's weight (in kg) by the square of their height (in m):
+Format the result to 2 decimal places = 33.60
 
-![](https://cdn.fs.teachablecdn.com/jKHjnLrNQjqzdz3MTMyv)
+Thus everyone's share of the total bill is $30.00 plus a $3.60 tip.
 
-**Warning** you should convert the result to a whole number. 
+Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
+
 
 # Example Input
 
 ```
-weight = 80
-```
-
-```
-height = 1.75
+Welcome to the tip calculator!
+What was the total bill? $124.56
+How much tip would you like to give? 10, 12, or 15? 12
+How many people to split the bill? 7
 ```
 
 # Example Output
 
-80 ÷ (1.75 x 1.75) =  26.122448979591837
-
 ```
-26
+Each person should pay: $19.93
 ```
 
-e.g. When you hit **run**, this is what should happen:  
-
-![](https://cdn.fs.teachablecdn.com/wmjVjddeSmGj0QVtOUrE)
 
 # Hint
 
-1. Check the data type of the inputs.
-2. Try to use the exponent operator in your code.
-3. Remember PEMDAS.
-4. Remember to convert your result to a whole number (int). 
-
-# Test Your Code
-
-Before checking the solution, try copy-pasting your code into this repl: 
-
-[https://repl.it/@appbrewery/day-2-2-test-your-code](https://repl.it/@appbrewery/day-2-2-test-your-code)
-
-This repl includes my testing code that will check if your code meets this assignment's objectives. 
+1. [How to round a number to 2 decimal places in Python](https://www.google.com/search?q=how+to+round+number+to+2+decimal+places+python&oq=how+to+round+number+to+2+decimal)
+2. [How to limit a float to two decimal places in Python](https://www.kite.com/python/answers/how-to-limit-a-float-to-two-decimal-places-in-python)
 
 
 
 # Solution
 
-[https://repl.it/@appbrewery/day-2-2-solution](https://repl.it/@appbrewery/day-2-2-solution)
+[https://replit.com/@appbrewery/tip-calculator-end](https://replit.com/@appbrewery/tip-calculator-end)
