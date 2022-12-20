@@ -1,28 +1,119 @@
-# 🚨 Don't change the code below 👇
-print("Welcome to the Love Calculator!")
-name1 = input("What is your name? \n")
-name2 = input("What is their name? \n")
-# 🚨 Don't change the code above 👆
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
 #Write your code below this line 👇
-Lower1 = name1.lower()
-Lower2 = name2.lower()
-Two_name = Lower1 + " " + Lower2
+option1 = (input(
+    'You\'re at a crossroad, Which way you wanna go? type "Left" or "Right". \n')
+           ).lower()
 
-Love1 = Two_name.count('t')
-Love1 += Two_name.count('r')
-Love1 += Two_name.count('u')
-Love1 += Two_name.count('e')
-
-Love2 = Two_name.count('l')
-Love2 += Two_name.count('o')
-Love2 += Two_name.count('v')
-Love2 += Two_name.count('e')
-Love_Score = Love1 * 10 + Love2
-
-if (Love_Score < 10 or Love_Score > 90):
-  print(f"Your score is {Love_Score}, you go together like coke and mentos.")
-elif (Love_Score > 40 or Love_Score < 50):
-  print(f"Your score is {Love_Score}, you are alright together.")
-else :
-  print(f"Your score is {Love_Score}.")
+if (option1 == "left"):
+    print("you got killed by wild animals")
+    print('''
+           _        _
+          /\\     ,'/|
+        _|  |\-'-'_/_/
+   __--'/`           \
+       /              \
+      /        "o.  |o"|
+      |              \/
+       \_          ___\
+         `--._`.   \;//
+              ;-.___,'
+             /
+           ,'
+        _-'
+    ''')
+elif (option1 == "right"):
+    option2 = (input(
+        "you\'ve come to a lake. There is an island in the middle of the lake'.\nType 'wait' to wait for a boat. Type 'swim' to swim across\n")
+               ).lower()
+    if (option2 == "swim"):
+        print("A bear attacked on you and you died.")
+        print('''                     .
+                       _.:/ )
+     _              .-Q      `._
+  '\(o7/'         o(.__         '-.
+  `.( ).'           `_/    )
+     H       ._      '-._.'         
+     w       ( \         /
+              \ '.     .'   )''')
+    elif (option2 == "wait"):
+        option3 = (input(
+            "you arrive at the island unharmed. There is a house with three doors: Blue, Red and White.\nWhich one you want to choose?\n "
+        )).lower()
+        if (option3 == "white"):
+            print("You found the Treasure. You won this game")
+            print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/[TomekK]
+*******************************************************************************
+            ''')
+        elif (option3 == "red"):
+            print("it's a room full of fire. Game Over")
+            print('''
+                           (  .      )
+           )           (              )
+                 .  '   .   '  .  '  .
+        (    , )       (.   )  (   ',    )
+         .' ) ( . )    ,  ( ,     )   ( .
+      ). , ( .   (  ) ( , ')  .' (  ,    )
+     (_,) . ), ) _) _,')  (, ) '. )  ,. (' )
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            ''')
+        elif (option3 == "blue"):
+            print("You are locked in the room and starved to death. Game Over")
+            print('''
+      ______
+   ,-' ;  ! `-.
+  / :  !  :  . \
+ |_ ;   __:  ;  |
+ )| .  :)(.  !  |
+ |"    (##)  _  |
+ |  :  ;`'  (_) (
+ |  :  :  .     |
+ )_ !  ,  ;  ;  |
+ || .  .  :  :  |
+ |" .  |  :  .  |
+ |____;----.____|
+            ''')
