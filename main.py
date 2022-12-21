@@ -1,16 +1,10 @@
-#Write your code below this line 👇
-#Hint: Remember to import the random module first. 🎲
+# Split string method
 import random
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+# 🚨 Don't change the code above 👆
 
-test_seed = input("Create a Seed number: ")
-random.seed(test_seed)
+#Write your code below this line 👇
+you_pay = random.randint(0, len(names))
+print(f"{names[you_pay]} is going to buy the meal today")
 
-random_number = random.randint(0, 1)
-# random_number2 = random.random()
-
-# rnd_no = random_number * random_number2
-
-if random_number == 1:
-    print("Heads")
-else:
-    print("Tails")
